@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/N"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/LeftBall"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:capitalize="characters"
+        android:rotationX="45"
+        android:text="@string/guess_n_the_n_number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#B10000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <TextView
+        android:id="@+id/Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/where_is_our_number_n_is_it_n_n_n"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <ImageView
+        android:id="@+id/RightBall"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+    <Button
+        android:id="@+id/LeftButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="ButtonLeftClick"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/RightBall"
+        app:layout_constraintEnd_toEndOf="@+id/RightBall"
+        app:layout_constraintStart_toStartOf="@+id/RightBall"
+        app:layout_constraintTop_toTopOf="@+id/RightBall" />
+
+    <Button
+        android:id="@+id/RightButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="ButtonRightClick"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/LeftBall"
+        app:layout_constraintEnd_toEndOf="@+id/LeftBall"
+        app:layout_constraintStart_toStartOf="@+id/LeftBall"
+        app:layout_constraintTop_toTopOf="@+id/LeftBall" />
+
+    <TextView
+        android:id="@+id/Place4number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/Info"
+        app:layout_constraintEnd_toEndOf="@+id/Info"
+        app:layout_constraintStart_toStartOf="@+id/Info"
+        app:layout_constraintTop_toTopOf="@+id/Info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

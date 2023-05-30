@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Zad2</string>
+    <string name="where_is_our_number_n_is_it_n_n_n">Where is our number?\n Is it:\n\n\n?</string>
+    <string name="guess_n_the_n_number">GUESS\n THE\n NUMBER</string>
+</resources>
